@@ -17,6 +17,7 @@ body {
 .everything {
   align-items: flex-start;
   gap: 25px;
+  height: 100vh;
 }
 
 .scores-and-form {
@@ -54,6 +55,8 @@ body {
 .scores-box {
   background-color: green;
   border: 1px solid black;
+  height: 500px;
+  overflow-y: auto;
 }
 
 .individual-score {
