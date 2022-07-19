@@ -57,7 +57,7 @@ body {
 }
 
 .individual-score {
-  border: 1px solid black;
+  padding: 5px;
 }
 
 .individual-score:nth-child(even) {
