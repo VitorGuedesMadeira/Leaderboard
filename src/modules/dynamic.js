@@ -2,8 +2,8 @@ import { scoresBox } from './variables.js';
 
 export default class Dynamic {
   static addNewScore(user, score, index) {
-    if(score.length >= 8){
-      score = '+9999999'
+    if (score.length >= 8) {
+      score = '+9999999';
     }
     const div = document.createElement('div');
     div.setAttribute('class', 'user-score-div');
@@ -15,7 +15,7 @@ export default class Dynamic {
     newScore.setAttribute('class', 'individual-score');
     div.appendChild(newUser);
     div.appendChild(newScore);
-    if(index===0){
+    if (index === 0) {
       div.style.background = 'gold';
       div.style.color = 'black';
     }
