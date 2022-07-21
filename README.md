@@ -4,7 +4,7 @@
 
 ## Acces link
 
-> https://vitorguedesmadeira.github.io/Leaderboard/
+> https://vitorguedesmadeira.github.io/Leaderboard/dist/
 
 ## Built With
 
@@ -14,6 +14,19 @@
 - VScode
 - Webpack
 - GitFlow
+
+## Setup
+
+- Use the following link for "$ git clone" the repo:
+https://github.com/VitorGuedesMadeira/Leaderboard.git
+- cd Leaderboard
+- "npm install" to install all the dependencies
+- "npm start" to run the live version locally
+- "code ." To open the project on your local editor
+
+- Please click on the "acess link" so you can view the live demo
+- You can use the input button for inserting new User/Scores
+- Click on the "refresh" button so you can show all the new user/scores
 
 ## Author
 
