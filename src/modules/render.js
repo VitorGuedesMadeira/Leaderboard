@@ -6,7 +6,7 @@ const render = () => {
   cleanList();
   for (let i = 0; i < DataClass.dataStructure.length; i += 1) {
     const newdataStructure = DataClass.dataStructure[i];
-    Dynamic.addNewScore(newdataStructure.name, newdataStructure.score);
+    Dynamic.addNewScore(newdataStructure.user, newdataStructure.score, i);
   }
 };
 
