@@ -11,17 +11,23 @@ body {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  background-color: lightblue;
+  background-color: black;
+  font-family: Arial, Helvetica, sans-serif;
 }
 
 .everything {
   align-items: flex-start;
-  gap: 25px;
   height: 100vh;
+  padding: 25px;
+}
+
+.title {
+  color: white;
 }
 
 .scores-and-form {
   gap: 25px;
+  height: 87%;
 }
 
 .flex-column {
@@ -34,55 +40,79 @@ body {
   flex-direction: row;
 }
 
+.names-scores {
+  justify-content: space-between;
+  padding: 15px;
+  background-image: linear-gradient(to bottom, rgb(88, 73, 107), rgb(70, 16, 156));
+  color: white;
+}
+
 .recent-scores {
-  background-color: blue;
+  color: white;
 }
 
 .scores-title-button {
-  background-color: yellow;
   gap: 25px;
   align-items: center;
   padding: 15px 0;
+  color: rgb(70, 16, 156);
 }
 
 .scores-refresh {
-  background-color: orange;
+  background-color: purple;
   border: 1px solid black;
   text-decoration: none;
   padding: 5px;
+  color: white;
+  box-shadow: 5px 5px 5px rgb(0, 0, 0, 0.5);
+  border-radius: 15px;
 }
 
 .scores-box {
   background-color: green;
   border: 1px solid black;
-  height: 500px;
+  max-height: 500px;
   overflow-y: auto;
+  color: white;
 }
 
-.individual-score {
-  padding: 5px;
+.individual-user {
+  margin-right: 50px;
 }
 
-.individual-score:nth-child(even) {
-  background-color: purple;
+.user-score-div {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-image: linear-gradient(to bottom, rgb(79, 58, 98), rgb(38, 25, 60));
+  padding: 10px;
+}
+
+.user-score-div:nth-child(even) {
+  background-image: linear-gradient(to bottom, rgb(43, 43, 84), rgb(30, 27, 60));
 }
 
 .add-score {
-  background-color: red;
+  color: white;
 }
 
 .add-score-title {
-  background-color: pink;
   padding: 15px 0;
+  color: white;
 }
 
 .score-inputs {
-  background-color: orange;
   gap: 5px;
   align-items: flex-end;
 }
 
 .score-inputs-button {
-  background-color: darkgreen;
+  background-color: purple;
+  color: white;
   width: 75px;
+  box-shadow: 5px 5px 5px rgb(0, 0, 0, 0.5);
+  border: 1px solid black;
+  padding: 5px;
+  cursor: pointer;
+  border-radius: 15px;
 }
