@@ -8,6 +8,8 @@
 <script defer src="runtime.bundle.js"></script><script defer src="index.bundle.js"></script></head>
 <body>
     <div class="everything flex-column">
+        <div class="image"></div>
+
         <h1 class="title">LEADERBOARD</h1>
         <div class="scores-and-form flex-row">
             <div class="recent-scores flex-column">
@@ -29,7 +31,7 @@
             <div class="add-score flex-column">
                 <h2 class="add-score-title">Add your score</h2>
                 <form class="score-inputs flex-column">
-                    <input class="input-name" type="text" placeholder="Your name" maxlength="20">
+                    <input class="input-name" type="text" placeholder="Your name" maxlength="10">
                     <input class="input-number" type="number" placeholder="Your score" >
                     <button class="score-inputs-button">Submit</button>
                 </form>
