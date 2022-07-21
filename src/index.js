@@ -5,7 +5,7 @@ import Dynamic from './modules/dynamic.js';
 import setLocalStorage from './modules/localStorage.js';
 import refresh from './modules/refresh.js';
 import render from './modules/render.js';
-import { scoresInputBtn, scoresRefresh } from './modules/variables.js';
+import { scoresInputBtn, scoresRefresh, soundtrack } from './modules/variables.js';
 import './style.css';
 
 scoresInputBtn.addEventListener('click', async () => {
@@ -26,6 +26,7 @@ scoresRefresh.addEventListener('click', async () => {
 });
 
 window.addEventListener('load', () => {
+  soundtrack.play();
   if (localStorage.getItem('scores')) {
     DataClass.dataStructure = JSON.parse(localStorage.getItem('scores'));
   }

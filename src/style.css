@@ -1,7 +1,10 @@
+@import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
+
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  font-family: 'Press Start 2P', cursive;
 }
 
 body {
@@ -13,6 +16,10 @@ body {
   align-items: center;
   background-color: black;
   font-family: Arial, Helvetica, sans-serif;
+  background-image: url(background-image/backgroundpixel.png);
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;
 }
 
 .everything {
@@ -23,6 +30,16 @@ body {
 
 .title {
   color: white;
+  font-family: 'Press Start 2P', cursive;
+  text-shadow:
+    5px 0 black,
+    -5px 0 black,
+    0 5px black,
+    0 -5px black,
+    5px 5px black,
+    -5px -5px black,
+    5px -5px black,
+    -5px 5px black;
 }
 
 .scores-and-form {
@@ -55,29 +72,35 @@ body {
   gap: 25px;
   align-items: center;
   padding: 15px 0;
-  color: rgb(70, 16, 156);
+  color: white;
 }
 
 .scores-refresh {
   background-color: purple;
   border: 1px solid black;
   text-decoration: none;
-  padding: 5px;
+  padding: 5px 20px;
   color: white;
   box-shadow: 5px 5px 5px rgb(0, 0, 0, 0.5);
   border-radius: 15px;
 }
 
+.scores-refresh:hover {
+  background-color: blue;
+}
+
 .scores-box {
-  background-color: green;
   border: 1px solid black;
   max-height: 500px;
+  overflow-x: auto;
   overflow-y: auto;
   color: white;
+  width: 600px;
 }
 
 .individual-user {
   margin-right: 50px;
+  min-width: 150px;
 }
 
 .user-score-div {
@@ -109,10 +132,14 @@ body {
 .score-inputs-button {
   background-color: purple;
   color: white;
-  width: 75px;
+  width: 120px;
   box-shadow: 5px 5px 5px rgb(0, 0, 0, 0.5);
   border: 1px solid black;
   padding: 5px;
   cursor: pointer;
   border-radius: 15px;
+}
+
+.score-inputs-button:hover {
+  background-color: blue;
 }
