@@ -16,16 +16,31 @@ body {
   align-items: center;
   background-color: black;
   font-family: Arial, Helvetica, sans-serif;
+  background-image: url(background-image/bodypng.png);
+  background-size: cover;
+  background-position: center;
+}
+
+.everything {
+  position: relative;
+  align-items: flex-start;
+  height: 100vh;
+  padding: 25px;
   background-image: url(background-image/backgroundpixel.png);
   background-repeat: no-repeat;
   background-size: contain;
   background-position: center;
 }
 
-.everything {
-  align-items: flex-start;
-  height: 100vh;
-  padding: 25px;
+.image {
+  position: absolute;
+  bottom: 0;
+  right: -90px;
+  background-image: url(runner.png);
+  background-size: contain;
+  background-repeat: no-repeat;
+  width: 450px;
+  height: 450px;
 }
 
 .title {
@@ -99,7 +114,7 @@ body {
 }
 
 .individual-user {
-  margin-right: 50px;
+  margin-right: 20px;
   min-width: 150px;
 }
 
@@ -111,12 +126,21 @@ body {
   padding: 10px;
 }
 
+.user-score-div:hover {
+  background-image: linear-gradient(to bottom, rgb(56, 39, 71), rgb(25, 16, 41));
+}
+
 .user-score-div:nth-child(even) {
   background-image: linear-gradient(to bottom, rgb(43, 43, 84), rgb(30, 27, 60));
 }
 
+.user-score-div:nth-child(even):hover {
+  background-image: linear-gradient(to bottom, rgb(32, 32, 67), rgb(20, 18, 44));
+}
+
 .add-score {
   color: white;
+  z-index: 10;
 }
 
 .add-score-title {
@@ -142,4 +166,42 @@ body {
 
 .score-inputs-button:hover {
   background-color: blue;
+}
+
+@media all and (max-width: 768px) {
+  .everything {
+    background-size: cover;
+    padding: 25px;
+  }
+
+  .scores-and-form {
+    flex-direction: column;
+  }
+
+  .score-inputs input {
+    width: 100%;
+  }
+
+  .scores-box {
+    width: 350px;
+    overflow-x: auto;
+  }
+
+  .image {
+    display: none;
+  }
+
+  .recent-scores {
+    width: 350px;
+    padding: 50px 0 0 0;
+  }
+
+  .add-score {
+    width: 350px;
+    padding: 50px 0;
+  }
+
+  .user-score-div {
+    padding: 20px;
+  }
 }

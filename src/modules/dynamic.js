@@ -2,8 +2,8 @@ import { scoresBox } from './variables.js';
 
 export default class Dynamic {
   static addNewScore(user, score, index) {
-    if(score.length > 22){
-      score = '+9999999999999999999999'
+    if(score.length >= 8){
+      score = '+9999999'
     }
     const div = document.createElement('div');
     div.setAttribute('class', 'user-score-div');
