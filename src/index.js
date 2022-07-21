@@ -19,10 +19,9 @@ scoresInputBtn.addEventListener('click', async () => {
 
 scoresRefresh.addEventListener('click', async () => {
   const gettingObject = await refresh(await iD);
-  DataClass.dataStructure = [...gettingObject.result]
+  DataClass.dataStructure = [...gettingObject.result];
   DataClass.dataStructure.sort(((a, b) => b.score - a.score));
-  if(DataClass)
-  setLocalStorage();
+  if (DataClass) { setLocalStorage(); }
   render();
 });
 
