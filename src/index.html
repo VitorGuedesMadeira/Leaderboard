@@ -8,6 +8,8 @@
 </head>
 <body>
     <div class="everything flex-column">
+        <div class="image"></div>
+
         <h1 class="title">LEADERBOARD</h1>
         <div class="scores-and-form flex-row">
             <div class="recent-scores flex-column">
@@ -17,7 +19,7 @@
                 </div>
                 <!---->
                 <div class="names-scores flex-row">
-                    <h3>Names</h3>
+                    <h3>Players</h3>
                     <h3>Scores</h3>
                 </div>
                 <!---->
@@ -29,12 +31,13 @@
             <div class="add-score flex-column">
                 <h2 class="add-score-title">Add your score</h2>
                 <form class="score-inputs flex-column">
-                    <input class="input-name" type="text" placeholder="Your name" maxlength="20">
-                    <input class="input-number" type="number" placeholder="Your score">
+                    <input class="input-name" type="text" placeholder="Your name" maxlength="10">
+                    <input class="input-number" type="number" placeholder="Your score" >
                     <button class="score-inputs-button">Submit</button>
                 </form>
             </div>
         </div>
+        <audio class="soundtrack" src="soundtrack/topgear.mp3"></audio>
     </div>
 </body>
 </html>
