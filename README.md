@@ -15,6 +15,10 @@
 - Webpack
 - GitFlow
 
+## Quick view
+
+![readmeLeaderboard](https://user-images.githubusercontent.com/103270117/180315732-272dbbd0-42e7-4149-a727-a35e216bc169.png)
+
 ## Setup
 
 - Use the following link for "$ git clone" the repo:
