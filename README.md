@@ -4,7 +4,7 @@
 
 ## Acces link
 
-> https://vitorguedesmadeira.github.io/Leaderboard/dist/
+> [Check the live version here](https://vitorguedesmadeira.github.io/Leaderboard/dist/)
 
 ## Built With
 
