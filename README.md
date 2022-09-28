@@ -1,6 +1,6 @@
 ![](https://img.shields.io/badge/Microverse-blueviolet)
 # Leaderboard:
-- Leaderboard project - Microverse
+- You can interact with an API inserting your user name and score and check the highest scores in the leaderboard! 💯
 
 ## Acces link
 
