@@ -8,12 +8,15 @@ import render from './modules/render.js';
 import { scoresInputBtn, scoresRefresh, soundtrack } from './modules/variables.js';
 import './style.css';
 
-scoresInputBtn.addEventListener('click', async () => {
+scoresInputBtn.addEventListener('click', async (e) => {
+  e.preventDefault();
   const inputName = document.querySelector('.input-name').value;
   const inputNumber = document.querySelector('.input-number').value;
   if (inputName !== '' && inputNumber !== '') {
     await createNewScore(await iD, inputName, inputNumber);
     setLocalStorage();
+    document.querySelector('.input-name').value = "";
+    document.querySelector('.input-number').value = "";
   }
 });
 
