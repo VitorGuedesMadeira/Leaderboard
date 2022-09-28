@@ -7,15 +7,15 @@
     <title>Leaderboard</title>
 </head>
 <body>
-    <div class="everything flex-column">
-        <div class="image"></div>
-
+    <main class="everything flex-column">
+        <!-- MAIN TITLE-->
         <h1 class="title">LEADERBOARD</h1>
         <div class="scores-and-form flex-row">
-            <div class="recent-scores flex-column">
+            <!--LEADERBOARD SECTION-->
+            <section class="recent-scores flex-column">
                 <div class="scores-title-button flex-row">
                     <h2>Recent Scores</h2>
-                    <a href="#" class="scores-refresh">Refresh</a>
+                    <a href="#" class="scores-refresh" alt="refreshButton">Refresh</a>
                 </div>
                 <!---->
                 <div class="names-scores flex-row">
@@ -26,18 +26,19 @@
                 <div class="scores-box flex-column">
                     <!--Dynamic generated-->
                 </div>
-            </div>
-            <!----->
-            <div class="add-score flex-column">
+            </section>
+            <!-- USER SCORE INPUT SECTION--->
+            <section class="add-score flex-column">
                 <h2 class="add-score-title">Add your score</h2>
                 <form class="score-inputs flex-column">
                     <input class="input-name" type="text" placeholder="Your name" maxlength="10">
                     <input class="input-number" type="number" placeholder="Your score" >
                     <button type="submit" class="score-inputs-button">Submit</button>
                 </form>
-            </div>
+            </section>
         </div>
-        <audio class="soundtrack" src="soundtrack/topgear.mp3"></audio>
-    </div>
+        <!-- BACKGROUND FIXED IMAGE-->
+        <div class="image"></div>
+    </main>
 </body>
 </html>
