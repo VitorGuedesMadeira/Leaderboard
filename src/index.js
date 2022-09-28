@@ -12,10 +12,12 @@ scoresInputBtn.addEventListener('click', async (e) => {
   e.preventDefault();
   const inputName = document.querySelector('.input-name').value;
   const inputNumber = document.querySelector('.input-number').value;
-  await createNewScore(await iD, inputName, inputNumber);
-  setLocalStorage();
-  document.querySelector('.input-name').value = "";
-  document.querySelector('.input-number').value = "";
+  if (inputName !== '' && inputNumber !== '') {
+    await createNewScore(await iD, inputName, inputNumber);
+    setLocalStorage();
+    document.querySelector('.input-name').value = "";
+    document.querySelector('.input-number').value = "";
+  }
 });
 
 scoresRefresh.addEventListener('click', async () => {
